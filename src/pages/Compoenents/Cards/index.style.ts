@@ -72,3 +72,8 @@ export const ButtonText = styled.div`
   font-weight: 600;
   color: #4474FF;
 `;
+
+export const LoadingContainer = styled('div')({
+  display: 'flex',
+  justifyContent: 'center',
+});

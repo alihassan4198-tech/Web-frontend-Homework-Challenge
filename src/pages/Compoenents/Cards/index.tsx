@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import { Box, Divider, Grid, CircularProgress } from "@mui/material";
+import { Box, Divider, Grid } from "@mui/material";
 import {
   Avatar,
   AvatarWrapper,
@@ -9,6 +9,7 @@ import {
   Container,
   Container1,
   LinkButton,
+  LoadingContainer,
   Subtitle,
   Title,
   Username,
@@ -109,9 +110,11 @@ export const Cards = () => {
               </Grid>
             ))}
         </Grid>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          {loading && <div>loading....</div>}
-        </div>
+        {loading && (
+          <LoadingContainer>
+            <div>loading....</div>
+          </LoadingContainer>
+        )}
       </Box>
     </>
   );
