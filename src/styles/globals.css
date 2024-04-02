@@ -1,0 +1,17 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.main-div {
+  height: 100%;
+  padding: 1rem;
+}
+
+.heading {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 20px;
+}
